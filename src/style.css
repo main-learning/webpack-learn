@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./font.ttf');
+  font-weight: normal;
+}
+
+.hello {
+  color: hsl(1, 100%, 70%);
+  font-family: 'Montserrat', sans-serif;
+}
