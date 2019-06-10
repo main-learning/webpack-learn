@@ -1,21 +1,17 @@
 import _ from 'lodash';
-
-import Icon from './icon.svg';
-import Data from './data.xml';
-import './style.css';
+import printMe from './print';
 
 function component() {
 
     const element = document.createElement('div');
+    const btn = document.createElement('button');
+
     element.innerHTML = _.join(['Hello', 'Laba'], ' ');
-    element.classList.add('hello');
-    
-    const myIcon = new Image();
-    myIcon.src = Icon; 
+    btn.innerHTML = 'Click me and check the console!';
 
-    element.appendChild(myIcon);
+    btn.onclick = printMe;
 
-    console.log(Data);
+    element.appendChild(btn);
 
     return element;
 }
